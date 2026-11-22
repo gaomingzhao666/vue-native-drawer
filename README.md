@@ -262,7 +262,7 @@ keyboard.
 
 ## Development
 
-Requirements: Node.js 24 LTS (see `.nvmrc`) and npm.
+Requirements: Node.js 26 LTS (see `.nvmrc`) and npm.
 
 ```sh
 npm install
