@@ -11,14 +11,16 @@
     "snap-points",
     "vue"
   ],
-  "homepage": "https://github.com/gaomingzhao-system/vue-native-drawer#readme",
+  "homepage": "https://github.com/gaomingzhao666/vue-native-drawer#readme",
   "bugs": {
-    "url": "https://github.com/gaomingzhao-system/vue-native-drawer/issues"
+    "url": "https://github.com/gaomingzhao666/vue-native-drawer/issues"
   },
+  "author": "gaomingzhao666",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gaomingzhao-system/vue-native-drawer.git"
+    "url": "git+https://github.com/gaomingzhao666/vue-native-drawer.git"
   },
+  "author": "gaomingzhao666",
   "files": [
     "dist"
   ],

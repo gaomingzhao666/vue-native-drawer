@@ -39,7 +39,7 @@ const { t } = useI18n()
     </section>
 
     <footer class="credits" role="contentinfo">
-      <a href="https://github.com/gaomingzhao-system/vue-native-drawer">{{ t.footer.github }}</a>
+      <a href="https://github.com/gaomingzhao666/vue-native-drawer">{{ t.footer.github }}</a>
       {{ t.footer.builtWith }}
     </footer>
   </main>
