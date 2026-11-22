@@ -37,9 +37,9 @@ export const ja: Messages = {
     cardTitle: 'コンテンツにフィット',
     cardDescription:
       'コンテンツの高さにぴったり合わせるアクションシート。下にドラッグするか、外側をタップするか、Escapeキーを押して閉じます。',
-    openButton: '共有…',
+    openButton: 'シェア',
     nothingYet: '未選択',
-    drawerTitle: '共有',
+    drawerTitle: 'シェア',
     targets: [
       { name: 'メッセージ', color: '#34c759' },
       { name: 'メール', color: '#007aff' },

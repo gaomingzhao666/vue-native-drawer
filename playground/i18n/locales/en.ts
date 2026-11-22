@@ -37,7 +37,7 @@ export const en: Messages = {
     cardTitle: 'Fit content',
     cardDescription:
       'An action sheet that is exactly as tall as its content. Drag it down, tap outside or press Escape to dismiss.',
-    openButton: 'Share…',
+    openButton: 'Share',
     nothingYet: 'Nothing yet',
     drawerTitle: 'Share',
     targets: [

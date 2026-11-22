@@ -36,7 +36,7 @@ export const zh: Messages = {
   fit: {
     cardTitle: '自适应内容高度',
     cardDescription: '根据内容高度自适应 Action Sheet。向下拖拽、点击遮罩或按 Escape 键即可关闭。',
-    openButton: '分享…',
+    openButton: '分享',
     nothingYet: '暂无选择',
     drawerTitle: '分享',
     targets: [
