@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/github/license/gaomingzhao-system/vue-native-drawer.svg?color=blue)](./LICENSE)
 [![Vue 3.5+](https://img.shields.io/badge/vue-3.5%2B-42b883.svg)](https://vuejs.org/)
 
-English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+English | [日本語](./README.ja.md) | [简体中文](./README.zh-CN.md)
 
 A drawer for the web that moves like a native iOS sheet, built for **Vue 3.5**.
 

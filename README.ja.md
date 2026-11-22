@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/github/license/gaomingzhao-system/vue-native-drawer.svg?color=blue)](./LICENSE)
 [![Vue 3.5+](https://img.shields.io/badge/vue-3.5%2B-42b883.svg)](https://vuejs.org/)
 
-[English](./README.md) | [简体中文](./README.zh-CN.md) | 日本語
+[English](./README.md) | 日本語 | [简体中文](./README.zh-CN.md)
 
 **Vue 3.5** 向けに構築された、ネイティブ iOS シートのように動く Web 向けドロワー（ボトムシート）コンポーネント。
 

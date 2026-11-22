@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/github/license/gaomingzhao-system/vue-native-drawer.svg?color=blue)](./LICENSE)
 [![Vue 3.5+](https://img.shields.io/badge/vue-3.5%2B-42b883.svg)](https://vuejs.org/)
 
-[English](./README.md) | 简体中文 | [日本語](./README.ja.md)
+[English](./README.md) | [日本語](./README.ja.md) | 简体中文
 
 专为 **Vue 3.5** 打造的原生 iOS 风格 Web 抽屉（Bottom Sheet）组件。
 
