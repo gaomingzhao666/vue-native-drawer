@@ -3,7 +3,6 @@ import { en } from './locales/en'
 import { ja } from './locales/ja'
 import { zh } from './locales/zh'
 import type { Locale, LocaleInfo, Messages } from './types'
-
 export type { Locale, LocaleInfo, Messages } from './types'
 
 export const availableLocales: LocaleInfo[] = [
