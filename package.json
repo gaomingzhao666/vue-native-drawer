@@ -1,6 +1,6 @@
 {
   "name": "vue-native-drawer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A native iOS-style drawer (bottom sheet) for Vue 3, with snap points and momentum gestures.",
   "keywords": [
     "bottom-sheet",
