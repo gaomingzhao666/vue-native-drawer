@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import LanguageSwitcher from './components/LanguageSwitcher.vue'
 import DirectionsDemo from './demos/DirectionsDemo.vue'
 import FadeDemo from './demos/FadeDemo.vue'
 import FitDemo from './demos/FitDemo.vue'
@@ -7,21 +8,26 @@ import NestedDemo from './demos/NestedDemo.vue'
 import NonModalDemo from './demos/NonModalDemo.vue'
 import ScaleDemo from './demos/ScaleDemo.vue'
 import SnapPointsDemo from './demos/SnapPointsDemo.vue'
+import { useI18n } from './i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <main class="page">
-    <header class="hero">
-      <span class="eyebrow">Vue 3.5</span>
-      <h1>vue-native-drawer</h1>
+    <header class="hero" role="banner">
+      <div class="hero-header">
+        <span class="eyebrow">{{ t.header.eyebrow }}</span>
+        <LanguageSwitcher />
+      </div>
+      <h1>{{ t.header.title }}</h1>
       <p>
-        A drawer that moves like an iOS sheet: snap points, momentum, rubber banding and the card
-        stack, all in one flat component written in plain TypeScript and CSS.
+        {{ t.header.description }}
       </p>
       <pre class="snippet"><code>&lt;Drawer v-model:open="open"&gt;…&lt;/Drawer&gt;</code></pre>
     </header>
 
-    <section class="grid">
+    <section class="grid" :aria-label="t.grid.ariaLabel">
       <SnapPointsDemo />
       <FitDemo />
       <ScaleDemo />
@@ -32,9 +38,9 @@ import SnapPointsDemo from './demos/SnapPointsDemo.vue'
       <FadeDemo />
     </section>
 
-    <footer class="credits">
-      <a href="https://github.com/gaomingzhao-system/vue-native-drawer">GitHub</a>
-      · Built with Vue 3.5, VueUse and plain CSS.
+    <footer class="credits" role="contentinfo">
+      <a href="https://github.com/gaomingzhao-system/vue-native-drawer">{{ t.footer.github }}</a>
+      {{ t.footer.builtWith }}
     </footer>
   </main>
 </template>

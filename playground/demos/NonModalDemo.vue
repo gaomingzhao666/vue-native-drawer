@@ -2,22 +2,20 @@
 import { ref } from 'vue'
 import { Drawer, type SnapPoint } from 'vue-native-drawer'
 import DemoCard from '../components/DemoCard.vue'
+import { useI18n } from '../i18n'
 
+const { t } = useI18n()
 const open = ref(false)
 const snapPoints: SnapPoint[] = ['140px', 1 / 2, 1]
 const snap = ref<SnapPoint>('140px')
-const labels = ['Peek', 'Half', 'Full']
 </script>
 
 <template>
-  <DemoCard
-    title="Non-modal"
-    description="No overlay: the page stays scrollable and interactive, like the sheet in Maps. The buttons below control the snap point from the outside."
-  >
+  <DemoCard :title="t.nonModal.cardTitle" :description="t.nonModal.cardDescription">
     <button class="button" type="button" data-testid="open-nonmodal" @click="open = !open">
-      {{ open ? 'Hide' : 'Show' }} player
+      {{ open ? t.nonModal.hidePlayer : t.nonModal.showPlayer }}
     </button>
-    <div class="segmented" role="group" aria-label="Snap point">
+    <div class="segmented" role="group" :aria-label="t.nonModal.segmentedAriaLabel">
       <button
         v-for="(point, index) in snapPoints"
         :key="String(point)"
@@ -26,7 +24,7 @@ const labels = ['Peek', 'Half', 'Full']
         :data-testid="`nonmodal-snap-${index}`"
         @click="snap = point"
       >
-        {{ labels[index] }}
+        {{ t.nonModal.snapLabels[index] }}
       </button>
     </div>
 
@@ -40,13 +38,12 @@ const labels = ['Peek', 'Half', 'Full']
       <div class="player">
         <span class="artwork" />
         <span class="list-text">
-          <strong>Weightless</strong>
-          <small>Marconi Union</small>
+          <strong>{{ t.nonModal.songTitle }}</strong>
+          <small>{{ t.nonModal.songArtist }}</small>
         </span>
       </div>
       <p class="prose">
-        Non-modal drawers leave focus and scrolling to the page. Use them for panels that live
-        alongside your content.
+        {{ t.nonModal.prose }}
       </p>
     </Drawer>
   </DemoCard>

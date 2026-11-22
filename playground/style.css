@@ -54,8 +54,15 @@ textarea {
 }
 
 .hero {
-  max-width: 40rem;
   margin-bottom: 2.5rem;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero h1 {
@@ -63,12 +70,14 @@ textarea {
   font-size: clamp(2rem, 6vw, 3.25rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
+  max-width: 44rem;
 }
 
 .hero p {
   margin: 0;
   color: var(--muted);
   font-size: 1.125rem;
+  max-width: 44rem;
 }
 
 .eyebrow {

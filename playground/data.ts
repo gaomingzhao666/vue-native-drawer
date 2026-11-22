@@ -1,3 +1,5 @@
+import type { Locale } from './i18n'
+
 export interface Place {
   name: string
   kind: string
@@ -5,7 +7,12 @@ export interface Place {
   color: string
 }
 
-const kinds = ['Coffee', 'Bakery', 'Bookstore', 'Park', 'Museum', 'Ramen', 'Gallery', 'Market']
+const localizedKinds: Record<Locale, string[]> = {
+  en: ['Coffee', 'Bakery', 'Bookstore', 'Park', 'Museum', 'Ramen', 'Gallery', 'Market'],
+  ja: ['カフェ', 'ベーカリー', '書店', '公園', '美術館', 'ラーメン', 'ギャラリー', 'マーケット'],
+  zh: ['咖啡馆', '烘焙坊', '书店', '公园', '美术馆', '拉面', '画廊', '市集'],
+}
+
 const colors = [
   '#ff9500',
   '#ff2d55',
@@ -16,6 +23,7 @@ const colors = [
   '#5ac8fa',
   '#ffcc00',
 ]
+
 const names = [
   'Blue Bottle',
   'Tartine',
@@ -39,9 +47,14 @@ const names = [
   'Alamo Square',
 ]
 
-export const places: Place[] = names.map((name, index) => ({
-  name,
-  kind: kinds[index % kinds.length]!,
-  distance: `${((index + 1) * 0.3).toFixed(1)} km`,
-  color: colors[index % colors.length]!,
-}))
+export const getPlaces = (locale: Locale = 'en'): Place[] => {
+  const kinds = localizedKinds[locale] || localizedKinds.en
+  return names.map((name, index) => ({
+    name,
+    kind: kinds[index % kinds.length]!,
+    distance: `${((index + 1) * 0.3).toFixed(1)} km`,
+    color: colors[index % colors.length]!,
+  }))
+}
+
+export const places: Place[] = getPlaces('en')
