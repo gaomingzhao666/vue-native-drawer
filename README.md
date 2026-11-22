@@ -1,5 +1,14 @@
 # vue-native-drawer
 
+[![npm version](https://img.shields.io/npm/v/vue-native-drawer.svg?color=3388ff)](https://www.npmjs.com/package/vue-native-drawer)
+[![npm downloads](https://img.shields.io/npm/dm/vue-native-drawer.svg)](https://www.npmjs.com/package/vue-native-drawer)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/vue-native-drawer)](https://bundlephobia.com/package/vue-native-drawer)
+[![CI](https://github.com/gaomingzhao-system/vue-native-drawer/actions/workflows/ci.yml/badge.svg)](https://github.com/gaomingzhao-system/vue-native-drawer/actions/workflows/ci.yml)
+[![license](https://img.shields.io/github/license/gaomingzhao-system/vue-native-drawer.svg?color=blue)](./LICENSE)
+[![Vue 3.5+](https://img.shields.io/badge/vue-3.5%2B-42b883.svg)](https://vuejs.org/)
+
+English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
 A drawer for the web that moves like a native iOS sheet, built for **Vue 3.5**.
 
 It opens from the bottom at a third of the screen. Drag it up to half and full height, flick it
