@@ -10,6 +10,7 @@
 [English](./README.md) | 日本語 | [简体中文](./README.zh-CN.md)
 
 **Vue 3.5** 向けに構築された、ネイティブ iOS シートのように動く Web 向けドロワー（ボトムシート）コンポーネント。
+[vaul-vue](https://github.com/unovue/vaul-vue) に着想を得て、より高いパフォーマンス、モダンな設計、そしてフラットなコンポーネント API を備えたアクティブメンテナンス版です。
 
 画面下部から 1/3 の高さで開き、ドラッグで半画面や全画面まで引き上げ、フリックで一気に移動し、下にドラッグして閉じることができます。ドラッグは指の動きに 1:1 で追従し、指を離しても慣性が維持され、端を超えて引っ張ると UIKit のようなラバーバンド効果（ゴムのような伸縮）が発生します。
 
@@ -273,6 +274,13 @@ test/browser/                Vitest ブラウザモード（Playwright 経由で
 e2e/                         Playwright、playground に対する E2E テスト
 ```
 
-## クレジット
+## クレジット (Credits)
 
-Emil Kowalski 氏による [vaul](https://github.com/emilkowalski/vaul) およびその Vue 移植版 [vaul-vue](https://github.com/unovue/vaul-vue) に着想を得て、フラットな Vue コンポーネント API として再構築されました。
+本プロジェクトは、[unovue](https://github.com/unovue) による [vaul-vue](https://github.com/unovue/vaul-vue) および [Emil Kowalski](https://github.com/emilkowalski) 氏による [vaul](https://github.com/emilkowalski/vaul) にインスパイアされ、より優れたパフォーマンスとモダンな設計を目指して開発・保守されているアクティブメンテナンス版です。
+
+[vaul-vue](https://github.com/unovue/vaul-vue) の作者陣による素晴らしい基礎に心より敬意と感謝を表します。`vue-native-drawer` は以下の改良を施して発展させています：
+
+- **パフォーマンスの向上**: Vue 3.5 の `computed` によるリアクティブ計算キャッシュ、レイアウトスラッシングを回避したポインタ追従、軽量な描画更新。
+- **モダンな設計**: `light-dark()` などの最新 CSS を活用し、不要なラッパーを排した純粋な Vue 3.5+ 設計。
+- **フラットな API**: 複数の入れ子コンポーネント（Root, Portal, Overlay, Content など）を不要にし、単一の `<Drawer>` で直感的に利用可能。
+- **アクティブな保守**: 最新の Vue エコシステムと依存関係に対応し、継続的なメンテナンスを提供。

@@ -10,6 +10,7 @@
 English | [日本語](./README.ja.md) | [简体中文](./README.zh-CN.md)
 
 A drawer for the web that moves like a native iOS sheet, built for **Vue 3.5**.
+An actively maintained, high-performance evolution inspired by [vaul-vue](https://github.com/unovue/vaul-vue) with improved responsiveness, modern styling, and a clean flat component API.
 
 It opens from the bottom at a third of the screen. Drag it up to half and full height, flick it
 to skip ahead, or drag it down to close. The drag follows your finger 1:1, a release keeps its
@@ -316,5 +317,11 @@ e2e/                         Playwright, against the playground
 
 ## Credits
 
-Inspired by [vaul](https://github.com/emilkowalski/vaul) by Emil Kowalski and its Vue port
-[vaul-vue](https://github.com/unovue/vaul-vue), with a flat Vue component API.
+This project is an actively maintained, modernized evolution inspired by [vaul-vue](https://github.com/unovue/vaul-vue) (by [unovue](https://github.com/unovue)) and the original [vaul](https://github.com/emilkowalski/vaul) by [Emil Kowalski](https://github.com/emilkowalski).
+
+Special thanks and full credit to the [vaul-vue](https://github.com/unovue/vaul-vue) authors for their foundational work. `vue-native-drawer` carries that vision forward with:
+
+- **Better Performance**: Fine-grained reactive caching via Vue `computed`, zero-thrash pointer event tracking, and lightweight style writes.
+- **Modern Style & Pure Vue 3.5+**: Built from the ground up for modern Vue 3.5+ features with modern CSS (`light-dark()`, native inertness) and zero unnecessary wrapper layers.
+- **Flat Component API**: Direct, single `<Drawer>` component API instead of multi-part compound components (`Drawer.Root`, `Drawer.Portal`, `Drawer.Overlay`, `Drawer.Content`).
+- **Active Maintenance**: Actively developed and maintained with up-to-date dependencies, strict TypeScript typing, and responsive fixes.

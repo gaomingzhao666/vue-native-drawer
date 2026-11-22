@@ -1,5 +1,9 @@
 # Refactor verification
 
+## Lineage and Credits
+
+This project is an actively maintained, modernized evolution inspired by [vaul-vue](https://github.com/unovue/vaul-vue) (and the original [vaul](https://github.com/emilkowalski/vaul) by Emil Kowalski). The goal of `vue-native-drawer` is to provide a higher-performance, flat component API for Vue 3.5+ with minimal overhead, reactive snap calculation caching, and zero layout thrashing during drag interactions.
+
 ## Bundle measurements
 
 Baseline: `9e039ee9104b440b54d0c5212376dbc6ab158167`. Both builds use the existing unminified

@@ -10,6 +10,7 @@
 [English](./README.md) | [日本語](./README.ja.md) | 简体中文
 
 专为 **Vue 3.5** 打造的原生 iOS 风格 Web 抽屉（Bottom Sheet）组件。
+灵感源自 [vaul-vue](https://github.com/unovue/vaul-vue)，是一个专注于更高渲染性能、现代化设计与极简扁平 API 的持续活跃维护版本。
 
 默认从屏幕底部展开至三分之一高度。向上拖拽可停靠至半屏或全屏，快速轻扫可直接吸附切换，向下拖动即可关闭。拖拽手势 1:1 跟随手指，释放后保留惯性滑动，拖出边界时具备类似 iOS UIKit 的橡皮筋弹性回弹效果。
 
@@ -273,6 +274,13 @@ test/browser/                Vitest 浏览器模式，基于 Playwright 驱动 C
 e2e/                         Playwright 针对 playground 的端到端测试
 ```
 
-## 致敬与鸣谢
+## 致敬与鸣谢 (Credits)
 
-本项目受 Emil Kowalski 创作的 [vaul](https://github.com/emilkowalski/vaul) 及其 Vue 移植版本 [vaul-vue](https://github.com/unovue/vaul-vue) 启发，并重构为单一扁平化的原生 Vue 组件 API。
+本项目灵感源自 [unovue](https://github.com/unovue) 的 [vaul-vue](https://github.com/unovue/vaul-vue) 以及 [Emil Kowalski](https://github.com/emilkowalski) 的 [vaul](https://github.com/emilkowalski/vaul)，是一个专注于**更高性能、现代化架构与持续活跃维护**的进化版本。
+
+衷心感谢 [vaul-vue](https://github.com/unovue/vaul-vue) 创作者们打下的坚实基础。`vue-native-drawer` 在其基础上进行了多项现代化重构与体验升级：
+
+- **极致性能**: 利用 Vue 3.5 `computed` 细粒度缓存吸附点与遮罩计算，杜绝拖拽过程中的多余 DOM 重新计算与布局抖动（Layout Thrashing）。
+- **现代化架构**: 针对 Vue 3.5+ 原生设计，支持现代 CSS（如 `light-dark()`），体积轻量且无冗余开销。
+- **单一扁平化 API**: 摆脱多层复合组件嵌套（Root / Portal / Overlay / Content），直接使用简洁直观的单一 `<Drawer>` 组件。
+- **持续维护**: 紧随 Vue 官方生态更新，保持类型健全与持续活跃维护。
